@@ -18,13 +18,25 @@
     <header class="header">
         <a href="#" class="logo">Meseret</a>
 
-        <div class="bx bx-me" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skill</a>
+            <a href="#service">Service</a>
+            <a href="#works">Project</a>
+            <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
         </nav>
+
+<div id="searchBar">
+    <form id="searchForm" onsubmit="return false;">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="button" id="searchButton" onclick="searchPortfolio()">Search</button>
+    </form>
+</div>
+
     </header>
 
     <section class="home" id="home">
@@ -33,59 +45,65 @@
             <div class="text-animate">
                 <h3>Digital Marketer and IT Specialist</h3>
             </div>
-            <p>gdfsakudfgsakudfgskufvkushfkushfkushgfkshgfkusdygfkudsygfkusdygu</p>
+            <p>The digital world is a fascinating, exciting and scary world, so I hope I can help you achieve what you are looking for with ease.</p>
 
             <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let's Talk</a>
+                <a href="#service" class="btn">Hire Me</a>
+                <a href="#contact" class="btn">Let's Talk</a>
             </div>
         </div>
-        <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-instagram'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        <div class="home-img">
+            <img src="images/home.png">
         </div>
-        <div class="home-imgHover"></div>
+
+        <div class="home-sci">
+            <a href="https://www.facebook.com/profile.php?id=100071568920064"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/meseret4993/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/meseret-bekele-59a334187/"><i class='bx bxl-linkedin'></i></a>
+        </div>
+
     </section>
 
     <section class="about" id="about">
         <div class="container">
             <div class="row">
                 <div class="about-img">
-                    <img src="images/about.jpg">
+                    <img src="images/about.png">
                 </div>
                 <div class="heading">
                     <h1>About Me</h1>
-                    <p> Itjdsbvjdbvj djv;djbv;jb dnv;kdn;vk
-                        jcvbxkjvbkxjbvkjxbvjkbxkvbxjbvjxb
-                        xkchv;xjbvjxbvjbxcvjbxjbvcxjbvj
-                        cjdsbvfbd;xvjbc;xjbv;xjbv;bjxcvbxc
-                        xvljxbvjxcbvbxcvjbxcljvbx/cjvb/xjvb/xjcbv
+                    <p> Hello there! I'm Meseret, a Digital Marketer and IT Specialist with a passion for computer
+                        science with a blend of creativity and technical expertise,
+                        I thrive on discovering new things and making life easier.
+                        What sets me apart is not just my technical prowess but my commitment to the work. I believe in
+                        honesty, loyality, integirity, hardworking, open minded
+                        and I'm on a mission to help people understand the value of moving forward to the digital world.
                     </p>
+
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('xh')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('xh')">Education</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Certificate</p>
+                        <p class="tab-links" onclick="opentab('education')">Experiance</p>
                     </div>
                     <div class="tab-contents active-tab" id="xh">
                         <ul>
-                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
-                            <li><span>UI?UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>High School</span><br>Don Bosco High School</li>
+                            <li><span>Bachelor Degree</span><br>Computer Science in Addis Ababa University</li>
+                            <li><span>Masters</span><br>Computer Sceience in American College of Technology</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experiance">
                         <ul>
-                            <li><span>exp</span><br>Designing Web/App Interfaces</li>
-                            <li><span>exp</span><br>Designing Web/App Interfaces</li>
-                            <li><span>exp</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Graphic Design</span><br>Graphisoft School</li>
+                            <li><span>Digital Marketing</span><br>Google Garage</li>
+                            <li><span>Introduction into Cloud Computing</span><br>Cisco Networking School</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>edu</span><br>Designing Web/App Interfaces</li>
-                            <li><span>edu</span><br>Designing Web/App Interfaces</li>
-                            <li><span>edu</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Blue Dan Advertising</span><br>Graphics Design</li>
+                            <li><span>Jphiego</span><br>Graphics Design for specific projects</li>
+                            <li><span>Nanodas Trade & Industry PLC</span><br>Digital Marketer and In-house IT Specialist</li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +113,7 @@
 
     <section class="skills" id="skills">
 
-        <h2 class="heading">My <span>Skills</span></h2>
+        <h2 class="headi">My <span>Skills</span></h2>
 
         <div class="skills-row">
             <div class="skills-column">
@@ -103,15 +121,15 @@
                 <div class="skills-box">
                     <div class="skills-content">
                         <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
+                            <h3>Html, CSS, JS, PHP <span>90%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                         <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
+                            <h3>Python <span>80%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                         <div class="progress">
-                            <h3>JS <span>85%</span></h3>
+                            <h3>Java <span>85%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                     </div>
@@ -123,15 +141,15 @@
                 <div class="skills-box">
                     <div class="skills-content">
                         <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
+                            <h3>Graphics Design <span>90%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                         <div class="progress">
-                            <h3>CSS <span>80%</span></h3>
+                            <h3>Web Development <span>80%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                         <div class="progress">
-                            <h3>JS <span>85%</span></h3>
+                            <h3>Network Installation & Configuration <span>85%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                     </div>
@@ -147,21 +165,21 @@
         </div>
         <div class="service-row">
             <div class="service-column">
-                <h3 class="title">Web Service</h3>
+                <h3 class="title">Website Development</h3>
 
                 <div class="service-box">
                     <div class="service-content">
                         <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>30</div>
-                            <h3> Website Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
+                            <div class="currency"><i class='bx bx-dollar'></i>50</div>
+                            <h3> From Scratch</h3>
+                            <p> Develop a website using html, css, js, php, python and other coding</p>
                         </div>
                     </div>
 
                     <div class="service-content">
                         <div class="content">
                             <div class="currency"><i class='bx bx-dollar'></i>40</div>
-                            <h3> Mobile Application Development</h3>
+                            <h3> Using Management Systems</h3>
                             <p> Develop a website using wordpress, joomla and other alike</p>
                         </div>
                     </div>
@@ -170,22 +188,22 @@
             </div>
 
             <div class="service-column">
-                <h3 class="title">Graphic Service</h3>
+                <h3 class="title">Digital Marketing</h3>
 
                 <div class="service-box">
                     <div class="service-content">
                         <div class="content">
                             <div class="currency"><i class='bx bx-dollar'></i>30</div>
-                            <h3> Website Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
+                            <h3> Graphics Design</h3>
+                            <p> Create a different graphics design like logo, letterhead, envelope, brochure, catalog and many more /p>
                         </div>
                     </div>
 
                     <div class="service-content">
                         <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>40</div>
-                            <h3> Mobile Application Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
+                            <div class="currency"><i class='bx bx-dollar'></i>50</div>
+                            <h3> Social Media Marketing</h3>
+                            <p> Manage Social Media Platforms</p>
                         </div>
                     </div>
 
@@ -198,50 +216,134 @@
                 <div class="service-box">
                     <div class="service-content">
                         <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>30</div>
-                            <h3> Website Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
+                            <div class="currency"><i class='bx bx-dollar'></i>60</div>
+                            <h3> Network Installation and Configuration</h3>
+                            <p> Configure and install routers, switch, accesspoint, Biometric Machine, TV Ip systems and others</p>
                         </div>
                     </div>
 
                     <div class="service-content">
                         <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>40</div>
-                            <h3> Mobile Application Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
+                            <div class="currency"><i class='bx bx-dollar'></i>80</div>
+                            <h3> CCTV Installation and Configuration</h3>
+                            <p> Configure and install survillence cameras</p>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <div class="service-column">
-                <h3 class="title">Other Service</h3>
-
-                <div class="service-box">
-                    <div class="service-content">
-                        <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>30</div>
-                            <h3> Website Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
-                        </div>
-                    </div>
-
-                    <div class="service-content">
-                        <div class="content">
-                            <div class="currency"><i class='bx bx-dollar'></i>40</div>
-                            <h3> Mobile Application Development</h3>
-                            <p> Develop a website using wordpress, joomla and other alike</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
 
         </div>
     </section>
 
+    <section class="works" id="works">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work" onclick="showPopup('images/5.jpg', 'Graphics Design', 'Branding and Social Media Marketing Designs')">
+                    <img src="images/5.jpg" alt="Clickable Image">
+                    <div class="layer">
+                        <h3>Digital Marketing</h3>
+                        <p>Branding and Social Media Marketing Designs</p>
+                    </div>
+                </div>
+    
+                <div class="work" onclick="showPopup('images/3.jpg', 'Graphics Design', 'Branding and Social Media Marketing Designs')">
+                    <img src="images/3.jpg" alt="Clickable Image">
+                    <div class="layer">
+                        <h3>Web Designing</h3>
+                        <p>Online Platoforms</p>
+                    </div>
+                </div>
+    
+                <div class="work" onclick="showPopup('images/4.jpg', 'Graphics Design', 'Branding and Social Media Marketing Designs')">
+                    <img src="images/4.jpg" alt="Clickable Image">
+                    <div class="layer">
+                        <h3>Network Managemnet</h3>
+                        <p>Configuration and Installation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="imagePopup" class="popup">
+        <span id="closeButton" onclick="closePopup()">&times;</span>
+        <img id="popupImage" src="" alt="Popup Image" style="max-width: 100%;">
+        <div class="layer">
+            <h3 id="popupTitle"></h3>
+            <p id="popupDescription"></p>
+        </div>
+    </div>
+    
 
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me!</h1>
+                    <p><i class='bx bxs-envelope'></i>meseretbekelee@gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i>+251 910 828 537</p>
+                    <div class="social-icons">
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="images/cv.zip" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="forms" method="POST" action="https://script.google.com/macros/s/AKfycbzwspJCEpjDQtAKsIKk5IFY1JpVtv6ayhUaLyRYP1zaIUfnOt0rrCiCLxhdwrTkZcCmOQ/exec" onsubmit="return submitForm()">
+                        <div class="input-box">
+                            <div class="input-field">
+                                <input name="Name" type="text" placeholder="Full Name" required>
+                                <span class="focus"></span>
+                            </div>
+                            <div class="input-field">
+                                <input name="Email" type="text" placeholder="Email Address" required>
+                                <span class="focus"></span>
+                            </div>
+                        </div>
+
+                        <div class="input-box">
+                            <div class="input-field">
+                                <input name="Phone" type="number" placeholder="Mobile Number" required>
+                                <span class="focus"></span>
+                            </div>
+                            <div class="input-field">
+                                <input name="Subject" type="text" placeholder="Email Subject" required>
+                                <span class="focus"></span>
+                            </div>
+                        </div>
+
+                        <div class="textarea-field">
+                            <textarea name="Message" id="" cols="30" rows="5" placeholder="Your Message"
+                                required></textarea>
+                            <span class="focus"></span>
+                        </div>
+
+                        <div class="btn-box btns">
+                            <button type="submit" class="btn"> Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer" >
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Meseret <i class='bx bxs-smile'></i> All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
     <script src="js/portfolio.js"></script>
 </body>
