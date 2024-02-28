@@ -9,7 +9,7 @@ function searchPortfolio() {
 
         var title = titleElement ? titleElement.innerText.toLowerCase() : '';
         var description = descriptionElement ? descriptionElement.innerText.toLowerCase() : '';
-        
+
         var isVisible = title.includes(searchTerm) || description.includes(searchTerm);
 
         workItem.style.display = isVisible ? "block" : "block";
@@ -81,19 +81,19 @@ function closePopup() {
 }
 
 function submitForm() {
-        event.preventDefault();
-    
-        const form = event.target;
-        const data = new FormData(form);
-    
-        fetch(form.action, {
-            method: 'POST',
-            body: data,
-        })
+    event.preventDefault();
+
+    const form = event.target;
+    const data = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: data,
+    })
         .then(response => response.json())
         .then(result => {
-            console.log(result); 
-            alert("Form submitted successfully!"); 
+            console.log(result);
+            alert("Form submitted successfully!");
             document.getElementById('forms').reset();
         })
         .catch(error => {
