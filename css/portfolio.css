@@ -964,6 +964,9 @@ section {
     .home {
         justify-content: center;
     }
+    .home-img{
+        margin-left: -100px;
+    }
 
     .home-content {
         display: flex;
